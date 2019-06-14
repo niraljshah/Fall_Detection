@@ -1,10 +1,13 @@
-# tf-pose-estimation
+# Fall detection using tf-pose-estimation
 
 'Openpose', human pose estimation algorithm, have been implemented using Tensorflow. It also provides several variants that have some changes to the network structure for **real-time processing on the CPU or low-power embedded devices.**
+
+Although, the FPS real-time depends on your processor and GPU. You can always consider changing configuration options through tensorflow commands.
 
 **You can even run this on your macbook with a descent FPS!**
 
 Original Repo(Caffe) : https://github.com/CMU-Perceptual-Computing-Lab/openpose
+Also, Courtesy : https://github.com/ildoonet/tf-pose-estimation
 
 | CMU's Original Model</br> on Macbook Pro 15" | Mobilenet-thin </br>on Macbook Pro 15" | Mobilenet-thin</br>on Jetson TX2 |
 |:---------|:--------------------|:----------------|
@@ -32,10 +35,11 @@ You need dependencies below.
 - slidingwindow
   - https://github.com/adamrehn/slidingwindow
   - I copied from the above git repo to modify few things.
+- swig
 
 ### Install
 
-Clone the repo and install 3rd-party libraries.
+Clone the repo and install 3rd-party libraries. Unzip all zip files to the same folder without changing the name.
 
 ```bash
 $ git clone https://www.github.com/ildoonet/tf-pose-estimation
@@ -101,7 +105,7 @@ Then you will see the screen as below with pafmap, heatmap, result and etc.
 ### Realtime Webcam
 
 ```
-$ python run_webcam.py --model=mobilenet_thin --resize=432x368 --camera=0
+$ python run_webcam.py --model=mobilenet_thin --resize=432x368 --video=0
 ```
 
 Then you will see the realtime webcam screen with estimated poses as below. This [Realtime Result](./etcs/openpose_macbook13_mobilenet2.gif) was recored on macbook pro 13" with 3.1Ghz Dual-Core CPU.
