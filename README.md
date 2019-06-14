@@ -47,6 +47,14 @@ $ cd tf-pose-estimation
 $ pip3 install -r requirements.txt
 ```
 
+## Swig
+
+After unzipping Swig Folder swigwin-4.0.0, you need to go to start, type edit, select edit the system environment variables,
+select environment variables option in 'Advanced' tab, double click on 'Path' in the user variables for <username> section.
+Now, click 'New' and add the path of the swigwin-4.0.0 directory, including swigwin-4.0.0
+  
+Alternatively, you can also download latest swig folder according to your needs from swig website. 
+
 Build c++ library for post processing. See : https://github.com/ildoonet/tf-pose-estimation/tree/master/tf_pose/pafprocess
 ```
 $ cd tf_pose/pafprocess
