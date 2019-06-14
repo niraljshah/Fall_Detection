@@ -113,7 +113,7 @@ Then you will see the screen as below with pafmap, heatmap, result and etc.
 ### Realtime Webcam
 
 ```
-$ python run_webcam.py --model=mobilenet_thin --resize=432x368 --video=0
+$ python Fall_Detection.py --model=mobilenet_thin --resize=432x368 --video=0
 ```
 
 Then you will see the realtime webcam screen with estimated poses as below. This [Realtime Result](./etcs/openpose_macbook13_mobilenet2.gif) was recored on macbook pro 13" with 3.1Ghz Dual-Core CPU.
@@ -122,7 +122,7 @@ Then you will see the realtime webcam screen with estimated poses as below. This
 
 This pose estimator provides simple python classes that you can use in your applications.
 
-See [run.py](run.py) or [run_webcam.py](run_webcam.py) as references.
+See [run.py](run.py) or [Fall_Detection.py](Fall_Detection.py) as references.
 
 ```python
 e = TfPoseEstimator(get_graph_path(args.model), target_size=(w, h))
