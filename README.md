@@ -138,6 +138,16 @@ import tf_pose
 coco_style = tf_pose.infer(image_path)
 ```
 
+## Fall Detection
+
+It takes the difference of position markings of head and legs to determine a Fall.
+
+It indicates a fall by displaying text on the screen. Although, a classifier can be trained if we have enough data along with accuarte prediction.
+
+This can be done by running it on a small video with fall occurences. Then manually check the falls and making a list manually.
+Now we have the train data, we can test it on the entire video or live webcam and save it in the classifier.
+
+
 ## ROS Support
 
 See : [etcs/ros.md](./etcs/ros.md)
